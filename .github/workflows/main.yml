@@ -1,9 +1,9 @@
 name: site-security-scan
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -12,4 +12,4 @@ jobs:
     - name: OWASP ZAP Baseline Scan
       uses: zaproxy/action-baseline@v0.3.0
       with:
-        target: "https://your-website.com/"
+        target: "http://google-gruyere.appspot.com/"
